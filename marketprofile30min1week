@@ -12,7 +12,7 @@ from datetime import *
 from snapi_py_client.snapi_bridge import StocknoteAPIPythonBridge
 import time
 samco=StocknoteAPIPythonBridge()
-login=samco.login(body={"userId":'RM33038','password':'Yuvan@14','yob':'1983'})
+login=samco.login(body={"userId":'xxxx','password':'xxxx','yob':'xxxx'})
 logind=json.loads(login)
 samco.set_session_token(sessionToken=logind['sessionToken'])
 print("login successful", "sessiontoken is " +str(logind['sessionToken']))
